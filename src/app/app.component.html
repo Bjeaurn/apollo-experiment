@@ -1,1 +1,6 @@
-<app-table></app-table>
+<div style="width: 68%; float: left;">
+  <app-table [selections]="selections"></app-table>
+</div>
+<div style="width: 30%; float: right;">
+  <app-details [selected]="selections.asObservable()"></app-details>
+</div>

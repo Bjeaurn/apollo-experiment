@@ -18,9 +18,10 @@ import { TableComponent } from './table/table.component';
 import { NavComponent } from './nav/nav.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
-  declarations: [AppComponent, TableComponent, NavComponent],
+  declarations: [AppComponent, TableComponent, DetailsComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

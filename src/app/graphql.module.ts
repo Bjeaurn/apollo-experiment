@@ -3,7 +3,8 @@ import {ApolloModule, APOLLO_OPTIONS} from 'apollo-angular';
 import {HttpLinkModule, HttpLink} from 'apollo-angular-link-http';
 import {InMemoryCache} from 'apollo-cache-inmemory';
 
-const uri = 'https://w5xlvm3vzz.lp.gql.zone/graphql'; // <-- add the URL of the GraphQL server here
+// const uri = 'https://w5xlvm3vzz.lp.gql.zone/graphql'; // <-- add the URL of the GraphQL server here
+const uri ='http://localhost:5000/'; // Local Pokémon graphQL api
 export function createApollo(httpLink: HttpLink) {
   return {
     link: httpLink.create({uri}),
